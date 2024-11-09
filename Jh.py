@@ -1,21 +1,23 @@
 import streamlit as st
 
+# URL de la imagen
 image_url = 'https://drive.google.com/thumbnail?id=1L26VEKf6ar6Bsflwh4BEKOKNowpmiY_V'
 
 # Configura el fondo de pantalla
 st.markdown(
-    """
+    f"""
     <style>
-    .stApp {
-        background-image: url('{image_url}'); /* URL de la imagen */
+    .stApp {{
+        background-image: url("{image_url}");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
+    }}
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Título de la aplicación
 st.write("¿Quieres saber que te quiere decir Kevy?")
